@@ -1,0 +1,17 @@
+2024-01-01 20:32:18 error: Request failed with status code 400
+2024-01-01 20:36:53 error: error service cryptoPrice Request failed with status code 400
+2024-01-01 20:37:14 error: error service cryptoPrice Request failed with status code 400
+2024-01-01 20:37:14 error: error controller price of crypto Request failed with status code 400
+2024-01-01 20:37:32 error: error service cryptoPrice Request failed with status code 400
+2024-01-01 20:37:32 error: error controller priceOfCrypto Request failed with status code 400
+2024-01-01 20:41:29 error: error controller priceOfCrypto "priceIn" length must be at least 3 characters long
+2024-01-01 20:41:35 error: error service cryptoPrice Request failed with status code 400
+2024-01-01 20:41:35 error: error controller priceOfCrypto Request failed with status code 400
+2024-01-01 20:41:49 error: error service cryptoPrice Request failed with status code 400
+2024-01-01 20:41:49 error: error controller priceOfCrypto Request failed with status code 400
+2024-01-01 20:42:09 error: error service cryptoPrice Request failed with status code 400
+2024-01-01 20:42:09 error: error controller priceOfCrypto Request failed with status code 400
+2024-01-01 20:44:34 error: error controller priceOfCrypto "priceIn" is not allowed to be empty
+2024-01-01 20:44:46 error: error controller priceOfCrypto "priceIn" length must be at least 3 characters long
+2024-01-01 20:44:49 error: error service cryptoPrice Request failed with status code 400
+2024-01-01 20:44:49 error: error controller priceOfCrypto Request failed with status code 400
