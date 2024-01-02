@@ -16,14 +16,16 @@ app.use(express.json());
 
 app.use(cors());
 
+
 app.use(cryptoRoute);
 app.use(fiatRoute);
 app.use(priceRoute);
-app.use(invalidRoute);
 
 app.get('/', (req, res) => {
     res.send('Hey');
 });
+// for handling 
+app.use(invalidRoute);
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () =>
