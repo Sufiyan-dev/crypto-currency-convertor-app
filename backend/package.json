@@ -6,8 +6,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js",
-    "vercel-build": "echo heloo"
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
