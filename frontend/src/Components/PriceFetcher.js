@@ -83,7 +83,12 @@ const PriceFetcher = () => {
 
     const handleOnClickQuote = (e) => {
         e.preventDefault();
-        if(cryptoAmount <= 0){
+        if(qouteAmount > 0){
+            setSelectedCrypto(cryptos[0].symbol);
+            setSelectedFiat(fiats[0].symbol);
+            setCryptoAmount(0);
+            setQuoteAmount(0);
+        } else if(cryptoAmount <= 0){
             alert("amount cannot be negative or zero")
         } else {
             console.log("quote btn");
@@ -121,7 +126,7 @@ const PriceFetcher = () => {
                         )}
                     </select>
                 </div>
-                <button type='submit' className='btn'>Quote</button>
+                <button type='submit' className='btn'>{qouteAmount > 0 ? 'Clear' : 'Quote'}</button>
                 <div>
                     {
                         qouteAmount > 0 ? (
