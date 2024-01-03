@@ -23,6 +23,10 @@ Install dependencies:
    ```
 
 ### Usage
+- Require backend url endpoint in the `config.js` file :
+    ```
+    base_backend_url: [URL_ENDPOINT],
+    ```
 - Start the frontend development server:
     ```bash
     npm start
