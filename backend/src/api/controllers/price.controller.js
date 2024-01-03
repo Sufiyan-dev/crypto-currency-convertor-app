@@ -5,11 +5,11 @@ import { validateCryptoPriceQueryInput } from "../validation/priceValidation.js"
 
 async function getPriceOfSpecificCrypto(req,res){
     try {
-        const { tokenIn, tokenAmount, priceIn } = req.query;
-        console.log(tokenIn, tokenAmount, priceIn)
+        const { tokenSymbol, tokenAmount, priceIn } = req.query;
+        console.log(tokenSymbol, tokenAmount, priceIn)
 
         const obj = {
-            tokenIn,
+            tokenSymbol,
             tokenAmount,
             priceIn
         }
@@ -20,7 +20,7 @@ async function getPriceOfSpecificCrypto(req,res){
             throw new TypeError(validation.message)
         }
 
-        const result = await specificCryptoPrice(tokenIn, tokenAmount, priceIn);
+        const result = await specificCryptoPrice(tokenSymbol, tokenAmount, priceIn);
 
         if(!result.status){
             throw new TypeError(result.message);
