@@ -2,7 +2,7 @@ import Joi from 'joi';
 import logger from '../logger/index.js';
 
 const cryptoPriceQuerySchema = Joi.object({
-    tokenSymbol: Joi.string().max(3).min(3).required(),
+    tokenSymbol: Joi.string().max(8).min(3).required(),
     tokenAmount: Joi.number().positive().required(),
     priceIn: Joi.string().max(3).min(3).required()
 })
